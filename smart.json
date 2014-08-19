@@ -5,6 +5,6 @@
   "homepage": "https://github.com/richsilv/semantic-modal",
   "git": "https://github.com/richsilv/semantic-modal.git",
   "packages": {
-  	"semantic-ui": {}
+  	"semantic-ui": ""
   }
 }

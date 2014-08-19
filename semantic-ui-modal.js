@@ -17,6 +17,9 @@ confirmModal = function(options, postRender) {
 		      $('.ui.dimmer.page').remove();
 		      $('#generalConfirmModal').remove();
 		    },
+		    onApprove: function() {
+		      options && options.callback && options.callback.apply(this, [options]);
+		    },
 		    debug: false,
 		    verbose: false,
 		    closable: options ? options.noButtons : null
