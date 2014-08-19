@@ -2,8 +2,8 @@
   "name": "semantic-ui-modal",
   "version": "0.1.0",
   "description": "Semantic UI Modals, packaged to play nice with Meteor",
-  "homepage": "https://github.com/richsilv/semantic-modal",
-  "git": "https://github.com/richsilv/semantic-modal.git",
+  "homepage": "https://github.com/richsilv/semantic-ui-modal",
+  "git": "https://github.com/richsilv/semantic-ui-modal.git",
   "packages": {
   	"semantic-ui": ""
   }
