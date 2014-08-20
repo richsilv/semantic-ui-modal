@@ -1,12 +1,26 @@
 #semantic-ui-modal
 
-Semantic Modals, packaged to play nice with Meteor.
+A package for creating Semantic Modals, designed to play nice with Meteor.
 
 **NOTE: THIS WILL ALSO ADD THE ENTIRE SEMANTIC-UI PACKAGE, WHICH IS PRETTY CHUNKY!  I might release a future version with only the relevant css and js for the modal, but for the time being, this is designed for people who are using Semantic-UI for the rest of their app.**
 
 ## Usage
 
-Allows the user to create Semantic-UI modals on the fly from Javascript code. Tested on Meteor 0.8.3, and the general modal method relies on `{{>UI.dynamic ...}}`, so it will not work with versions earlier than 0.8.2.  Confirm modal may work on earlier versions, but it's untested.
+Allows the user to create Semantic-UI modals on the fly from Javascript code.  For example:
+
+    SemanticModal.confirmModal(
+        {
+            header: "Example Modal",
+            message: "Click a button, please.",
+            callback: function() {
+                console.log("You clicked okay!");    
+            }
+        }, function() {
+            console.log("The modal has just been shown");
+        }
+    );
+
+Tested on Meteor 0.8.3, and the general modal method relies on `{{>UI.dynamic ...}}`, so it will not work with versions earlier than 0.8.2.  Confirm modal may work on earlier versions, but it's untested.
 
 ## Installation
 
