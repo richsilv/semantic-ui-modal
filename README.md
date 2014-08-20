@@ -56,7 +56,7 @@ This will render the supplied template in a new modal, with the data context pro
 *options* - an object containing any of the following:
 
 * *modalSettings*: a dictionary of [Semantic-UI modal settings](http://semantic-ui.com/modules/modal.html#/settings) which will overwrite the defaults.
-* *modalClass*: CSS class(es) to be added to the `"ui modal"` object.  This allows for easy styling of the modal with user stylesheets, *particularly* as far as width and horizontal positioning are concerned.  Semantic-UI already ships with the modal classes `small` and `large` for overwriting the default width settings, but custom classes are easy to write by simply specifying `width` and negative `margin-left` of half the width.
+* *modalClass*: CSS class(es) to be added to the `"ui modal"` object.  This allows for easy styling of the modal with user stylesheets, particularly as far as width and horizontal positioning are concerned.  Semantic-UI already ships with the modal classes `small` and `large` for overwriting the default width settings, but custom width classes are easy to write by simply specifying `width` and negative `margin-left` of half the width.
 * *postRender*: a function to run once the modal has been shown.  The details are exactly as above.
 
 Events should be handled by registering handlers using the usual `Template.xxx.events` API for the template that's going to be passed to the `generalModal` method.
