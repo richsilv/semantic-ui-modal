@@ -47,7 +47,7 @@ Note that if the modal is closed by clicking "Cancel", no further action will be
 
 ### generalModal(template, data, options)
 
-This will render the supplied template in a new modal, with the data context provided.  Note that although the template will be reactive with respect to any registered helpers, it *will not be* with respect to the data context.
+This will render the supplied template in a new modal, with the data context provided.  Note that although the template will be reactive with respect to any registered helpers, it *will not be reactive* with respect to the data context.  This is a consequence of the way `UI.renderWithData` works at present.
 
 *template* - the string name of any registered template (note that you cannot pass the template instance constructor itself).
 
