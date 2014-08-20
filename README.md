@@ -39,9 +39,11 @@ This will render a simple modal with header, body and either "Okay" and "Cancel"
     * header: string header
     * message: the main body of the modal, which can be HTML or a simple string.
     * noButtons: if set to true, the modal will have no button row, and must be closed by clicking on the dimmer.
-    * callback: a function to run when the user clicks the "Okay" button.  If the modal is closed by clicking "Cancel" no further action will be taken.
+    * callback: a function to run when the user clicks the "Okay" button.  The function is passed a single argument containing the `options` object, allowing the user to add further properties to be used in the callback to this object as required.  Within the callback, `this` refers to the modal node in the DOM.
+    
+Note that if the modal is closed by clicking "Cancel", no further action will be taken.
 
-*postRender* - a callback to run once the modal has been shown.
+*postRender* - a callback to run once the modal has been shown.  As above, one argument, containing `options`, is passed to this function, whilst `this` refers to the DOMRange containing the modal.  If anybody has any idea how I can return the template instance itself instead of the DOMRange, let me know!
 
 ### generalModal(template, data, options)
 
@@ -55,7 +57,9 @@ This will render the supplied template in a new modal, with the data context pro
 
     * modalSettings: a dictionary of [Semantic-UI modal settings](http://semantic-ui.com/modules/modal.html#/settings) which will overwrite the defaults.
     * modalClass: CSS class(es) to be added to the `"ui modal"` object.  This allows for easy styling of the modal with user stylesheets, *particularly* as far as width and horizontal positioning are concerned.  Semantic-UI already ships with the modal classes `small` and `large` for overwriting the default width settings, but custom classes are easy to write by simply specifying `width` and negative `margin-left` of half the width.
-    * postRender: a function to run once the modal has been shown.
+    * postRender: a function to run once the modal has been shown.  The details are exactly as above.
+
+Events should be handled by registering handlers using the usual `Template.xxx.events` API for the template that's going to be passed to the `generalModal` method.
 
 ## Issues
 
