@@ -1,30 +1,32 @@
 templateAttach = function(template, callback, data) {
 	if (typeof template === "string") template = Template[template];
 	if (!template) return false;
+	var instance
 	if (data)
-		UI.insert(UI.renderWithData(template, data), document.body);
+		instance = UI.renderWithData(template, data);
 	else
-		UI.insert(UI.render(template), document.body);
-	return callback && callback.apply(this, arguments);
+		instance = UI.render(template);
+	UI.insert(instance, document.body);
+	return callback && callback.call(this, instance);
 };
 
 confirmModal = function(options, postRender) {
 	templateAttach(
 		Template.generalConfirmModalWrapper, 
-		function() {
+		function(instance) {
 		  $('#generalConfirmModal').modal('setting', {
 		    onHide: function() {
 		      $('.ui.dimmer.page').remove();
 		      $('#generalConfirmModal').remove();
 		    },
 		    onApprove: function() {
-		      options && options.callback && options.callback.apply(this, [options]);
+		      options && options.callback && options.callback.call(this, options);
 		    },
 		    debug: false,
 		    verbose: false,
 		    closable: options ? options.noButtons : null
 		  }).modal('show');
-		  postRender && postRender.apply(this, arguments);
+		  postRender && postRender.call(instance, options);
 		},
 		{
 			message: options && options.message,
@@ -49,8 +51,7 @@ generalModal = function(template, data, options) {
 		  }))
 		  .modal('show')
 		  .modal('refresh');
-		  console.log(this);
-			options && options.postRender && options.postRender.apply(this, arguments);
+			options && options.postRender && options.postRender.call(this, options);
 		},
 		{
 			dataContext: data,
