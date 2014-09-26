@@ -3,10 +3,10 @@ templateAttach = function(template, callback, data) {
 	if (!template) return false;
 	var instance
 	if (data)
-		instance = UI.renderWithData(template, data);
+		instance = UI.renderWithData(template, data, document.body);
 	else
-		instance = UI.render(template);
-	UI.insert(instance, document.body);
+		instance = UI.render(template, document.body);
+	// UI.insert(instance, document.body);
 	return callback && callback.call(this, instance);
 };
 
