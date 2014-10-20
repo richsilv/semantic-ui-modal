@@ -1,12 +1,20 @@
 {
   "dependencies": [
     [
+      "base64",
+      "1.0.0"
+    ],
+    [
       "blaze",
-      "2.0.0"
+      "2.0.1"
+    ],
+    [
+      "deps",
+      "1.0.4"
     ],
     [
       "ejson",
-      "1.0.1"
+      "1.0.3"
     ],
     [
       "fourseven:scss",
@@ -18,7 +26,7 @@
     ],
     [
       "htmljs",
-      "1.0.0"
+      "1.0.1"
     ],
     [
       "id-map",
@@ -34,11 +42,11 @@
     ],
     [
       "meteor",
-      "1.0.3"
+      "1.1.1"
     ],
     [
       "minimongo",
-      "1.0.2"
+      "1.0.3"
     ],
     [
       "observe-sequence",
@@ -54,7 +62,7 @@
     ],
     [
       "reactive-var",
-      "1.0.1"
+      "1.0.2"
     ],
     [
       "richsilv:semantic-ui-sass",
@@ -62,7 +70,7 @@
     ],
     [
       "templating",
-      "1.0.5"
+      "1.0.7"
     ],
     [
       "tracker",
@@ -74,6 +82,6 @@
     ]
   ],
   "pluginDependencies": [],
-  "toolVersion": "meteor-tool@1.0.32",
+  "toolVersion": "meteor-tool@1.0.33",
   "format": "1.0"
 }
