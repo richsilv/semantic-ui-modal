@@ -2,86 +2,86 @@
   "dependencies": [
     [
       "base64",
-      "1.0.0"
-    ],
-    [
-      "blaze",
-      "2.0.1"
-    ],
-    [
-      "deps",
-      "1.0.4"
-    ],
-    [
-      "ejson",
-      "1.0.3"
-    ],
-    [
-      "fourseven:scss",
-      "0.9.5"
-    ],
-    [
-      "geojson-utils",
-      "1.0.0"
-    ],
-    [
-      "htmljs",
       "1.0.1"
     ],
     [
-      "id-map",
+      "blaze",
+      "2.0.2"
+    ],
+    [
+      "deps",
+      "1.0.5"
+    ],
+    [
+      "ejson",
+      "1.0.4"
+    ],
+    [
+      "fourseven:scss",
       "1.0.0"
+    ],
+    [
+      "geojson-utils",
+      "1.0.1"
+    ],
+    [
+      "htmljs",
+      "1.0.2"
+    ],
+    [
+      "id-map",
+      "1.0.1"
     ],
     [
       "jquery",
-      "1.0.0"
+      "1.0.1"
     ],
     [
       "json",
-      "1.0.0"
+      "1.0.1"
     ],
     [
       "meteor",
-      "1.1.1"
+      "1.1.2"
     ],
     [
       "minimongo",
-      "1.0.3"
+      "1.0.4"
     ],
     [
       "observe-sequence",
-      "1.0.2"
+      "1.0.3"
     ],
     [
       "ordered-dict",
-      "1.0.0"
+      "1.0.1"
     ],
     [
       "random",
-      "1.0.0"
+      "1.0.1"
     ],
     [
       "reactive-var",
-      "1.0.2"
+      "1.0.3"
     ],
     [
       "richsilv:semantic-ui-sass",
-      "1.0.0"
+      "1.0.9"
     ],
     [
       "templating",
-      "1.0.7"
+      "1.0.8"
     ],
     [
       "tracker",
-      "1.0.2"
+      "1.0.3"
     ],
     [
       "underscore",
-      "1.0.0"
+      "1.0.1"
     ]
   ],
   "pluginDependencies": [],
-  "toolVersion": "meteor-tool@1.0.33",
+  "toolVersion": "meteor-tool@1.0.34",
   "format": "1.0"
 }

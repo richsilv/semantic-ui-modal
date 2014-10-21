@@ -1,0 +1,21 @@
+/*--------------
+     Control
+---------------*/
+
+.ui.modal .control {
+  padding: 1rem 2rem;
+  text-align: right;
+}
+.ui.modal .control > .button {
+  margin-left: 0.75em;
+}
+
+@media only screen and (max-width : 768px) {
+  .ui.modal .control {
+    padding-bottom: 0em
+  }
+  .ui.modal .control > .buttons,
+  .ui.modal .control > .button {
+    margin-bottom: 1em;
+  }
+}

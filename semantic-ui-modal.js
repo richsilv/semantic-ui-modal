@@ -1,11 +1,11 @@
 templateAttach = function(template, callback, data) {
+	var instance;
 	if (typeof template === "string") template = Template[template];
 	if (!template) return false;
-	var instance
 	if (data)
-		instance = UI.renderWithData(template, data, document.body);
+		instance = Blaze.renderWithData(template, data, document.body);
 	else
-		instance = UI.render(template, document.body);
+		instance = Blaze.render(template, document.body);
 	// UI.insert(instance, document.body);
 	return callback && callback.call(this, instance);
 };
