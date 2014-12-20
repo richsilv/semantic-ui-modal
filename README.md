@@ -61,6 +61,10 @@ This will render the supplied template in a new modal, with the data context pro
 
 Events should be handled by registering handlers using the usual `Template.xxx.events` API for the template that's going to be passed to the `generalModal` method.
 
+## Demo
+
+There is a demo running at [semantic-ui-modal-demo.meteor.com](http://semantic-ui-modal-demo.meteor.com), with the source available [here](https://github.com/richsilv/meteor-semantic-ui-modal-demo).
+
 ## Issues
 
 Please feel free to raise an issue if you encounter problems or you'd like to suggest a feature.
