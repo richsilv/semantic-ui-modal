@@ -16,8 +16,10 @@ confirmModal = function(options, postRender) {
 		function(instance) {
 		  $('#generalConfirmModal').modal('setting', {
 		    onHide: function() {
-		      $('.ui.dimmer.page').remove();
-		      $('#generalConfirmModal').remove();
+		      Meteor.setTimeout(function() {
+			    $('.ui.dimmer.page').remove();
+			    $('#generalConfirmModal').remove();
+		  	  }, $(this).modal('setting', 'duration'));
 		    },
 		    onApprove: function() {
 		      options && options.callback && options.callback.call(this, options);
@@ -43,8 +45,10 @@ generalModal = function(template, data, options) {
 		function() {
 		  $('#generalModal').modal('setting', _.extend( (options ? options.modalSettings : {}) || {}, {
 			    onHide: function() {
-			      $('.ui.dimmer.page').remove();
-			      $('#generalModal').remove();
+			      Meteor.setTimeout(function() {
+				    $('.ui.dimmer.page').remove();
+				    $('#generalModal').remove();
+				  }, $(this).modal('setting', 'duration'));
 			    },
 			    debug: false,
 			    verbose: false
