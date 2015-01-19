@@ -1,10 +1,10 @@
-<template name="generalConfirmModalWrapper">
-	<div class="ui small modal" id="generalConfirmModal">
-	{{>generalConfirmModal}}
+<template name="confirmModalWrapper">
+	<div class="ui small modal" id="confirmModal">
+	{{>confirmModal}}
 	</div>
 </template>
 
-<template name="generalConfirmModal">
+<template name="confirmModal">
    {{#if header}}
    	<div class="header">
     {{header}}
@@ -15,11 +15,11 @@
   	</div>
 		{{#unless noButtons}}
 		<div class="actions">
-  		<div class="ui negative button" id="generalConfirmCancel">
+  		<div class="ui negative button" id="confirmCancel">
   			<i class="remove icon"></i>
   			Cancel
   		</div>
-  		<div class="ui positive button" id="generalConfirmOkay">
+  		<div class="ui positive button" id="confirmOkay">
   			<i class="checkmark icon"></i>
   			Okay
   		</div>
