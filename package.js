@@ -1,6 +1,6 @@
 Package.describe({
   summary: 'Semantic UI Modals, packaged to play nice with Meteor',
-  version: "1.0.6",
+  version: "1.0.7",
   git: "https://github.com/richsilv/semantic-ui-modal.git"
 
 });
@@ -18,11 +18,13 @@ Package.on_use(function(api) {
    * Add files that should be used with this
    * package.
    */
-  api.use('templating@1.0.8', 'client');
-  api.use("nooitaf:semantic-ui@1.2.0", 'client');
-  api.add_files('semantic-ui-modal.html', 'client');
-  api.add_files('semantic-ui-modal.js', 'client');
-  api.add_files('semantic-ui-modal.css', 'client');
+  api.use('templating@1.0.11', 'client');
+  api.use("nooitaf:semantic-ui@1.8.1", 'client');
+  api.add_files([
+    'semantic-ui-modal.html',
+    'semantic-ui-modal.js',
+    'semantic-ui-modal.css',
+  ], 'client');
 
   /*
    * Export global symbols.
