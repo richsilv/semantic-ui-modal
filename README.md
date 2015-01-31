@@ -24,7 +24,7 @@ Tested on Meteor 0.8.3, and the general modal method relies on `{{>UI.dynamic ..
 
 ## Installation
 
-    mrt add semantic-ui-modal
+    meteor add richsilv:semantic-ui-modal
 
 ## SemanticModal
 
