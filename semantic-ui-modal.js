@@ -11,7 +11,7 @@ templateAttach = function(template, callback, data) {
 
 confirmModal = function(options, postRender) {
 	templateAttach(
-		Template.confirmModalWrapper, 
+		Template.confirmModalWrapper,
 		function(instance) {
 	  		$('#confirmModal').modal('setting', {
 		    	onHide: function() {
@@ -78,11 +78,11 @@ Template.confirmModal.events({
 		this.delay && Meteor.setTimeout(function() {
 			_this.delay.apply(_this, arguments)
 		}, delayTime);
-		template.$(template.firstNode.offsetParent).modal('hide');	
+		template.$(template.firstNode.offsetParent).modal('hide');
 	}
 });
 
 SemanticModal = {
-	confirmModal: confirmModal,
-	generalModal: generalModal
+  confirmModal: confirmModal,
+  generalModal: generalModal
 };
