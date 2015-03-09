@@ -1,7 +1,7 @@
 Package.describe({
   name: "richsilv:semantic-ui-modal",
   summary: "Semantic UI Modals, packaged to play nice with Meteor",
-  version: "1.0.7",
+  version: "1.0.8",
   git: "https://github.com/richsilv/semantic-ui-modal.git"
 
 });

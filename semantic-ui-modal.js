@@ -72,8 +72,6 @@ Template.confirmModal.events({
 			instance = Template.instance(),
 			delayTime = $(template.firstNode.offsetParent).modal('setting', 'duration');
 
-		console.log(Template.parentData(0));
-
 		this.callback && this.callback.apply(this, arguments);
 		this.delay && Meteor.setTimeout(function() {
 			_this.delay.apply(_this, arguments)
