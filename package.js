@@ -1,7 +1,7 @@
 Package.describe({
   name: "richsilv:semantic-ui-modal",
   summary: "Semantic UI Modals, packaged to play nice with Meteor",
-  version: "1.0.8",
+  version: "1.0.9",
   git: "https://github.com/richsilv/semantic-ui-modal.git"
 
 });
@@ -21,7 +21,8 @@ Package.on_use(function(api) {
    */
   api.use([
     "templating@1.0.11",
-    "nooitaf:semantic-ui@1.8.1"
+    "semantic:ui-css@1.11.6",
+    "semantic:ui-modal@1.11.6"
   ], "client");
 
   api.add_files([
