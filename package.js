@@ -19,11 +19,8 @@ Package.on_use(function(api) {
    * Add files that should be used with this
    * package.
    */
-  api.use([
-    "templating@1.1.1",
-    "semantic:ui-css@1.11.6",
-    "semantic:ui-modal@1.11.6"
-  ], "client");
+  api.use("templating", "client");
+  api.use("semantic:ui-css@1.0.0 || 2.0.0", "client");
 
   api.add_files([
     "semantic-ui-modal.html",
